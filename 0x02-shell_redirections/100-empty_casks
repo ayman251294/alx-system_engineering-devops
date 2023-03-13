@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -print0 | sed -z 's/.*\///' | tr '\0' '\n'
+find . -empty | rev | cut -d '/' -f 1 | rev
