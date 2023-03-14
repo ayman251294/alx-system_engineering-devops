@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((36#$WATER + 36#$STIR)) | bc | tr -d '\n' | tr 01234567 behlnort && echo
+echo $((5#$(echo $WATER | tr '[:lower:]' '01234') + 5#$(echo $STIR | tr '[:lower:]' '01234'))) | printf '%o\n' | tr '01234567' 'behlnort'
