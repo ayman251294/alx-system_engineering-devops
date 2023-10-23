@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Using file 0-gather_data_from_an_API.py extend my Python script to export data in the JSON format"""
+"""Script to export to-do list information of all employees to JSON format"""
 import json
 import requests
 
